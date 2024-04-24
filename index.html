@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-  
+    <link rel="stylesheet" href="./aos/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
     <title>ONG</title>
-  </head>
+  </head> 
+
   <body>
     <div class="container">
       <div class="header" id="header">
@@ -26,267 +27,341 @@
         </div>
         <div class="navigation">
           <div class="logo">
-            <h1>ONG</h1>
+            <h1><a href="#header">SAPROHUM</a></h1>
           </div>
           <div class="nav">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About US</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">testimonials</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#header">Accueil</a></li>
+              <li><a href="#about">Apropos</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#testimonials">Temoignages</a></li>
               <li>
-                <a class="active" href="./pages/contact.html" target="_blank"
-                  >Contact</a
-                >
+                <a class="active" href="./pages/contact.html" target="_blank">Contact</a>
               </li>
             </ul>
           </div>
-          <div class="language">
-            <select name="language" id="language">
-              <option value="English">En</option>
-              <option value="Français">Fr</option>
-            </select>
-            <div class="search"></div>
+          <div class="news">
+            <form>
+              <input type="email" placeholder="Votre Mail Ici" required class="newsInput" />
+              <button type="submit" id="btn">S'inscrire à la NewsLetter</button>
+            </form>
           </div>
         </div>
 
         <div class="content">
           <div class="slogan">
-            <h2>Small Efforts <br />Make Big Change</h2>
+            <h2 id="target" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="500"
+              data-aos-duration="1000" data-aos-once="false">Un petit effort entraîne<br /> un grand </h2>
           </div>
-          <p>We are ready for provide better service to make the world happy</p>
+          <p class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="600" data-aos-duration="1000"
+            data-aos-once="false">La "Santé et la Promotion Humaine" en sigle SAPROHUM</p>
           <div class="button">
-            <button class="active" id="btn">Become a Volunteer</button>
-            <button id="btn">Donate Now</button>
+            <button class="active" id="btn">Deviens Volontaire</button>
+            <button id="btn">Fais un Don</button>
           </div>
         </div>
       </div>
 
       <div class="donation">
         <div class="para_donation">
-          <p>We are non profit Charity and NGO organization</p>
+          <p>En Matière de qualité de nutrition et de santé, les statistiques sont alarmantes dans notre pays, la mal
+            nutrition bat son record, des dispensaires et cliniques de fortune poussent ici et là et le soin de qualité
+            est un luxe.</p>
+          <p>Notre pays n'est pas épargné par le phénomène des enfants de la rue, des orphélins, des filles-mères et par
+            le lot quotidien de la misère et ses corollaires, tout comme la quasi-totalité des pays africains
+            subsaharienne</p>
         </div>
 
-        <div class="cards">
+        <div class="cards aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="500" data-aos-duration="1000"
+          data-aos-once="false">
           <div class="card">
             <div class="icon">
-              <i><img src="./medias/outils.png" alt="" /></i>
-              <p>Donation</p>
-              <span>Collect fund over the world</span>
+              <img src="./medias/faire-un-don.png" alt="" />
+              <p>Don</p>
+              <span>Collectez des fonds dans le monde entier</span>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="important">
+              Chaque contribution, grande ou petite, devient une partie d’un effort mondial pour soutenir les causes qui
+              nous tiennent à cœur.
             </p>
+            <p>
+              Qu’il s’agisse de lutter contre la faim, de fournir un abri aux sans-abri, de promouvoir l’éducation pour
+              tous ou de protéger notre environnement naturel, chaque acte de bienfaisance traverse les océans et les
+              continents pour faire une différence.
+            </p>
+            <button id="btn">Faire un Don</button>
           </div>
           <div class="card">
             <div class="icon">
-              <i><img src="./medias/outils.png" alt="" /></i>
-              <p>Donation</p>
-              <span>Collect fund over the world</span>
+              <img src="./medias/faire-un-don.png" alt="" />
+              <p>Volontaire</p>
+              <span>Collectez des fonds dans le monde entier</span>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
+              Ensemble, nous pouvons transformer l’espoir en action. Ensemble, nous pouvons assurer que personne n’est
+              laissé pour compte. Ensemble, nous pouvons collecter des fonds dans le monde entier, car lorsque nous
+              unissons nos efforts, nous sommes imparables.
             </p>
-          </div>
-          <div class="card">
-            <div class="icon">
-              <i><img src="./medias/outils.png" alt="" /></i>
-              <p>Donation</p>
-              <span>Collect fund over the world</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
-              ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="important">
+              Rejoignez-nous dans cette quête pour un avenir meilleur, où chaque geste de générosité construit un pont
+              vers un monde plus juste et plus prospère pour tous.
             </p>
+            <button id="btn">Devenir volontaire</button>
           </div>
         </div>
       </div>
 
       <section id="about">
         <div class="content">
-          <div class="left"></div>
-          <div class="right">
-            <h3>Welcome to <span>ONG</span> Charity</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              incidunt optio repellendus ex vel. Quos aliquam amet dolore
-              distinctio aperiam?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              incidunt optio repellendus ex vel. Quos aliquam amet dolore
-              distinctio aperiam?
-            </p>
-            <div class="socialsDiv">
-              <button id="btn">More About us</button>
-              <div class="socials">
-                <a href="#"
-                  ><img src="./medias/facebook.png" alt="facebook"
-                /></a>
-                <a href="#"
-                  ><img src="./medias/call-center-service.png" alt="call"
-                /></a>
-                <a href="#"
-                  ><img src="./medias/instagram.png" alt="instagram"
-                /></a>
+          <h2>Qui <span>Sommes-Nous</span></h2>
+          <div class="leftAndRight">
+            <div class="left" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"
+              data-aos-duration="1000" data-aos-once="false"></div>
+            <div class="right" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="500"
+              data-aos-duration="1000" data-aos-once="false">
+              <h3>Bienvenue chez <span>SAPROHUM</span></h3>
+              <p>
+                La "Santé et la Promotion Humaine", SAPROHUM en sigle, organisation non gouvernementale à caractère
+                humanitaire, aimerait se rallier aux efforts du gouvernement, afin de soulager la population agricole, par
+                les soins de qualité, les déplacés internes et les filles mères avec l'hébergement, la formation éducative
+                et professionnelle.
+              </p>
+              <p>
+                Le siège principal de la SAPROHUM est établi à kinshasa dans la commune de Mont-Ngafula sur l'avenue
+                Babiseke, N°6, Quartier Musanga
+              </p>
+              <div class="socialsDiv">
+                <button id="btn">En savoir plus</button>
+                <div class="socials">
+                  <a href="#"><img src="./medias/facebook.png" alt="facebook" /></a>
+                  <a href="#"><img src="./medias/call-center-service.png" alt="call" /></a>
+                  <a href="#"><img src="./medias/instagram.png" alt="instagram" /></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="other">
-          <div class="otherContent">
+          <div class="otherContent" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="400"
+            data-aos-duration="1000" data-aos-once="false">
             <img src="./medias/bg.jpeg" alt="" />
             <div class="info">
-              <h4>Our children</h4>
-              <p>Lorem ipsum dolor sit.</p>
+              <h4>Nos Enfants</h4>
+              <p>Rejoignez-nous dans cette quête pour un avenir meilleur, où chaque geste de générosité construit un pont
+                vers un monde plus juste et plus prospère pour tous.</p>
               <a href="#">Donate</a>
             </div>
           </div>
-          <div class="otherContent">
-            <img
-              src="./medias/Schwarz & Funk - Ain't That Bad - bichaublog.jpeg"
-              alt=""
-            />
+          <div class="otherContent" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="300"
+            data-aos-duration="1000" data-aos-once="false">
+            <img src="./medias/Schwarz & Funk - Ain't That Bad - bichaublog.jpeg" alt="" />
             <div class="info">
-              <h4>Our children</h4>
-              <p>Lorem ipsum dolor sit.</p>
+              <h4>Nos Enfants</h4>
+              <p>Qu’il s’agisse de lutter contre la faim, de fournir un abri aux sans-abri, de promouvoir l’éducation pour
+                tous ou de protéger notre environnement naturel, chaque acte de bienfaisance traverse les océans et les
+                continents pour faire une différence.</p>
               <a href="#">Donate</a>
             </div>
           </div>
-          <div class="otherContent">
+          <div class="otherContent" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="300"
+            data-aos-duration="1000" data-aos-once="false">
             <img src="./medias/bg.jpeg" alt="" />
             <div class="info">
-              <h4>Our children</h4>
-              <p>Lorem ipsum dolor sit.</p>
+              <h4>Nos Enfants</h4>
+              <p>Dans un monde où les défis ne connaissent pas de frontières, la générosité de l’esprit humain s’élève
+                pour répondre à l’appel. </p>
               <a href="#">Donate</a>
             </div>
           </div>
-          <div class="otherContent">
-            <img
-              src="./medias/Schwarz & Funk - Ain't That Bad - bichaublog.jpeg"
-              alt=""
-            />
+          <div class="otherContent" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="400"
+            data-aos-duration="1000" data-aos-once="false">
+            <img src="./medias/Schwarz & Funk - Ain't That Bad - bichaublog.jpeg" alt="" />
             <div class="info">
-              <h4>Our children</h4>
-              <p>Lorem ipsum dolor sit.</p>
+              <h4>Nos Enfants</h4>
+              <p>“Collectez des fonds dans le monde entier” n’est pas seulement un slogan, c’est un mouvement, une mission
+                collective pour apporter un changement positif là où il est le plus nécessaire.</p>
               <a href="#">Donate</a>
             </div>
           </div>
         </div>
-        <div class="marqueeContent">
-          <p class="marquee">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
-            perferendis!
-          </p>
+
+        <div class="f-box">
+          <div class="f-txt">
+            <h2>Notre Approche <span>Collaborative</span></h2>
+            <p>
+              Nous travaillons avec nos partenaires et nos bénéficiaires pour
+              créer un changement positif et durable
+            </p>
+          </div>
+          <div class="parent-box">
+            <div class="box" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="400"
+              data-aos-duration="1000" data-aos-once="false">
+              <div class="box-child">
+                <div class="box-img">
+                  <img src="./medias/cible.png" alt="Impact" />
+                </div>
+                <h3>impact</h3>
+              </div>
+              <div class="box-p">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae itaque voluptatum, laudantium tenetur maxime nulla
+                  quia quam omnis blanditiis sit!
+                </p>
+              </div>
+            </div>
+            <div class="box" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="500"
+              data-aos-duration="1000" data-aos-once="false">
+              <div class="box-child">
+                <div class="box-img">
+                  <img src="./medias/equipe.png" alt="Collaboration" />
+                </div>
+                <h3>collaboration</h3>
+              </div>
+              <div class="box-p">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                  vitae harum in deleniti reiciendis laudantium recusandae, eius
+                  eos itaque architecto?
+                </p>
+              </div>
+            </div>
+            <div class="box" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="600"
+              data-aos-duration="1000" data-aos-once="false">
+              <div class="box-child">
+                <div class="box-img">
+                  <img src="./medias/transparence.png" alt="Transparence" />
+                </div>
+                <h3>transparence</h3>
+              </div>
+              <div class="box-p">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                  voluptatem voluptatum ut enim provident tenetur earum
+                  necessitatibus tempora soluta voluptatibus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="objectif-parent">
+          <div class="objectif-title">
+            <h2>Nos <span>objectifs</span></h2>
+            <div class="object-p">
+              <p>
+                En travaillant ensemble pour atteindre ces objectifs, nous croyons
+                que nous pouvons faire une différence significative dans la vie
+                des personnes vivant dans la pauvreté
+              </p>
+            </div>
+          </div>
+
+          <div class="objectif">
+            <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="400"
+              data-aos-duration="1000" data-aos-once="false">
+              <h3>+1000</h3>
+              <p>Projets à realiser</p>
+            </div>
+
+            <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="500"
+              data-aos-duration="1000" data-aos-once="false">
+              <h3>+10.3M</h3>
+              <p>De personnes à aider</p>
+            </div>
+
+            <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="600"
+              data-aos-duration="1000" data-aos-once="false">
+              <h3>+110k</h3>
+              <p>Donateurs ONG</p>
+            </div>
+
+            <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="700"
+              data-aos-duration="1000" data-aos-once="false">
+              <h3>+25k</h3>
+              <p>Pays d'intervention</p>
+            </div>
+          </div>
+
+          <div class="objectif-stat">
+            <div class="ob-parent">
+              <div class="ob-num" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="1000"
+                data-aos-duration="1000" data-aos-once="false">
+                <h3>+11000</h3>
+              </div>
+              <div class="ob-p">
+                <p>
+                  Contribuer à la construction d'un monde plus juste et plus
+                  équitable pour tous.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="service" class="content">
-        <h2>Our Services</h2>
-        <div class="servicesContainer">
-          <div class="card">
-            <div class="image">
-              <img src="./medias/food.jpeg" alt="Nourriture saine" />
+        <div class="bg">
+          <h2>Nos <span>Services</span></h2>
+          <p class="postTitle">Nous croyons fermement en la puissance de la collaboration pour maximiser l'impact de nos
+            efforts dans la lutte contre la faim et la pauvreté. </p>
+          <div class="servicesContainer">
+            <div class="card" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"
+              data-aos-duration="1000" data-aos-once="false">
+              <div class="image">
+                <img src="./medias/food.jpeg" alt="Nourriture saine" />
+              </div>
+              <div class="info">
+                <h3>Une Nourriture Saine</h3>
+                <p>
+                  S'engager à la production agricole afin de s'autosuffire alimentairement et consommer bio.
+                </p>
+                <button id="btn">En savoir plus</button>
+              </div>
             </div>
-            <div class="info">
-              <h3>We gave Healty Food</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia, porro?
-              </p>
-              <button id="btn">Read more</button>
+            <div class="card cardLeft" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="500"
+              data-aos-duration="1000" data-aos-once="false">
+              <div class="info">
+                <h3>Educations</h3>
+                <p>
+                  Sensibiliser les filles-mères et les orphélins à l'éducation sexuelle, au risque de la dégradation du
+                  tissu vital par le VIH/SIDA, au planning familial. leur offrir un cadre éducatif de qualité avec
+                  scolarité, un hebergement et apprentissage de metier comme la coupe et couture, le tressage des cheveux,
+                  la menuiserie, l'épargne et l'auto financement.
+                </p>
+                <button id="btn">En savoir plus</button>
+              </div>
+              <div class="image">
+                <img src="./medias/medeicine.jpeg" alt="Medecine" />
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img src="./medias/medeicine.jpeg" alt="Medecine" />
+            <div class="card" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"
+              data-aos-duration="1000" data-aos-once="false">
+              <div class="image">
+                <img src="./medias/medeicine.jpeg" alt="Sheltor" />
+              </div>
+              <div class="info">
+                <h3>Soin Medicale</h3>
+                <p>
+                  Leur offrir un soin de qualité à travers une clinique avec imagerie médicale de la SAPROHUM
+                </p>
+                <button id="btn">En savoir plus</button>
+              </div>
             </div>
-            <div class="info">
-              <h3>We gave Medicine</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia, porro?
-              </p>
-              <button id="btn">Read more</button>
+            <div class="card cardLeft" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="500"
+              data-aos-duration="1000" data-aos-once="false">
+              <div class="info">
+                <h3>EcoSystème</h3>
+                <p>
+                  Promouvoir quelques activités sur le changement climatique en plantant des milliers d'arbres, sur le
+                  droit, le devoir et sur le respect du bien commun.
+                </p>
+                <button id="btn">En savoir plus</button>
+              </div>
+              <div class="image">
+                <img src="./medias/donation.jpeg" alt="Habits" />
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img src="./medias/donation.jpeg" alt="Sheltor" />
-            </div>
-            <div class="info">
-              <h3>We gave sheltor</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia, porro?
-              </p>
-              <button id="btn">Read more</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img src="./medias/donation.jpeg" alt="Habits" />
-            </div>
-            <div class="info">
-              <h3>We gave good Cloth</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia, porro?
-              </p>
-              <button id="btn">Read more</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img
-                src="./medias/Schwarz & Funk - Ain't That Bad - bichaublog.jpeg"
-                alt="Education"
-              />
-            </div>
-            <div class="info">
-              <h3>We gave Eduation</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia, porro?
-              </p>
-              <button id="btn">Read more</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img src="./medias/water.jpeg" alt="Eau potable" />
-            </div>
-            <div class="info">
-              <h3>We gave pure Water</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Mollitia, porro?
-              </p>
-              <button id="btn">Read more</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards-newsletters">
-          <div class="newsletters-p">
-            <div class="icon-line">
-              <i class="fa-solid fa-bullhorn"></i>
-              <h4>restez informés!</h4>
-            </div>
-            <p>
-              Restez informés de toutes nos actualités concernant nos actions
-              pour les enfants, le parrainage et tout le quotidien de
-              l'organisation  grâce à notre newsletter mensuelle.
-            </p>
-            <form action="#">
-              <input type="email" placeholder="votre email">
-              <input type="button" value="recevoir le newsletter">
-              <p>"Ensemble, unis pour transformer des vies et apporter de l'espoir aux plus démunis.</p>
-            </form>
           </div>
         </div>
       </section>
@@ -307,7 +382,7 @@
             </p>
 
             <h4>Junior Kamanda</h4>
-            <span>statut : partenaire</span>
+            <span>Membre : Fondateur</span>
           </div>
           <div class="card">
             <div class="img">
@@ -321,7 +396,7 @@
             </p>
 
             <h4>Junior Kamanda</h4>
-            <span>statut : partenaire</span>
+            <span>Membre : effectifs</span>
           </div>
           <div class="card">
             <div class="img">
@@ -335,7 +410,7 @@
             </p>
 
             <h4>Junior Kamanda</h4>
-            <span>statut : partenaire</span>
+            <span>Memebre : Bienfaiteurs</span>
           </div>
           <div class="card">
             <div class="img">
@@ -349,63 +424,77 @@
             </p>
 
             <h4>Junior Kamanda</h4>
-            <span>statut : partenaire</span>
+            <span>Membre : Honneur</span>
           </div>
       </section>
 
       <section id="contact" class="content">
-        <h2>NewsLetter</h2>
-          <!-- <form>
-          <input type="text" placeholder="Nom" required />
-          <input type="email" placeholder="Email" required />
-          <button type="submit">Envoyer</button>
-          </form> -->
+        <h2>News<span>Letter</span></h2>
+        <div class="partenaire">
+          <div class="logo-part">
+            <div class="part-title">
+              <h3>Nous travaillons avec les meilleurs partenaires</h3>
+            </div>
+            <div class="p-on">
+              <p>Grâce à nos partenariats pour l'éradication de la pauvreté, nous aspirons à créer des changements durables qui permettent aux individus et aux communautés de s'épanouir et de prospérer de manière autonome. Rejoignez-nous dans cette alliance pour un monde où la dignité humaine et l'égalité des chances sont des réalités pour tous.</p>
+            </div>
+              <div class="zol">
+              <img src="./medias/zol.png" alt="" />
+              <img src="./medias/ubisoft.png" alt="" />
+              <img src="./medias/vitality.png" alt="" />
+            </div>
+          </div>
+          <div class="logo-part">
+            <div class="part-title">
+              <h3>Notre Action pour les Plus Défavorisés</h3>
+            </div>
+            <div class="p-on">
+              <p> Ensemble pour un Avenir Meilleur" incarne notre détermination à répondre aux besoins pressants des personnes vivant dans la pauvreté. En tant qu'ONG dédiée à cette cause, chaque action que nous entreprenons vise à améliorer les conditions de vie des plus vulnérables. Que ce soit en fournissant un accès à l'alimentation, etc</p>
+            </div>
+            <div class="zol">
+              <img src="./medias/zol.png" alt="" />
+              <img src="./medias/ubisoft.png" alt="" />
+              <img src="./medias/vitality.png" alt="" />
+            </div>
+          </div>
+          
+          <div class="parent-child">
+            <div class="parent-news">
+              <div class="part-title">
+                <h3>Ensemble pour un Avenir Meilleur</h3>
+              </div>
+              <div class="p-on">
+                 <p>
+                  Inscrivez-vous à notre newsletter pour rester informé(e) sur nos
+                  actions, nos besoins et les moyens de faire une réelle différence.
+                  Rejoignez-nous dans notre mission de solidarité en action, où chaque geste compte dans la lutte contre la pauvreté et l'injustice sociale.
+                </p>
 
-        <div class="cards-newsletters" id="cardsNewsletters">
-          <div class="newsletters-p">
-              <div class="close-btn">
-                <img src="./medias/close_14440511.png" alt=""  id="closeBtn"/>
               </div>
-              <div class="icon-line">
-                <img src="./medias/trompette.svg" alt="" />
-                <h4>restez informés!</h4>
-              </div>
-              <p>
-                Restez informés de toutes nos actualités concernant nos actions
-                pour les enfants, le parrainage et tout le quotidien de
-                l'organisation grâce à notre newsletter mensuelle.
-              </p>
-              <div class="communaut-part">
-                <p>rejoignez notre communauté informés!</p>
-              </div>
-              <form action="#">
-                <input type="email" placeholder=" votre email" />
-                <input type="button" value="recevoir la newsletter" />
-              </form>
-              <div class="news-l">
-                <p>vous pouvez vous désinscrire en toute simplicité</p>
-              </div>
+               
+                <form action="#">
+                 <input type="email" placeholder=" Votre email"required>
+                  <input type="submit" value="inscription" />
+                </form>
+            </div>
           </div>
         </div>
       </section>
 
       <footer class="footer">
-        <div class="custom-shape-divider-top-1711770384">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
+        <!-- <div class="custom-shape-divider-top-1711770384">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path
               d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"
-            ></path>
+              class="shape-fill">
+              
+            </path>
           </svg>
-        </div>
+
+        </div> -->
         <section class="footer-top">
           <div class="info-parent">
-            <h3>ONG</h3>
+            <h3>SAPROHUM</h3>
             <div class="info-footer">
               <p>votre don est inestimable</p>
               <address>
@@ -471,39 +560,11 @@
           </div>
         </section>
         <div class="line"></div>
-  
+
       </footer>
     </div>
+
+    <script src="./aos/aos.js"></script> <!-- Anim on scroll -->
     <script src="index.js"></script>
-    <script>
-      // Script pour faire défiler les images
-      const slides = document.querySelectorAll('.slide');
-      let currentSlide = 0;
-      const cards = document.querySelectorAll('.testiContent > .card');
-      let currentSlideCard = 0;
-      
-
-      function showSlide(slideIndex) {
-          slides.forEach((slide, index) => {
-              slide.style.transform = `translateX(-${100 * slideIndex}%)`;
-          });
-      }
-      function showSlideCard(slideIndex) {
-          cards.forEach((card, index) => {
-              card.style.transform = `translateX(-${100 * slideIndex}%)`;
-          });
-      }
-
-      // Change de slide toutes les 3 secondes
-      setInterval(() => {
-          currentSlide = (currentSlide + 1) % slides.length;
-          showSlide(currentSlide);
-      }, 5000);
-
-      setInterval(() => {
-          currentSlideCard = (currentSlideCard + 1) % cards.length;
-          showSlideCard(currentSlideCard);
-      }, 7000);
-  </script>
   </body>
 </html>
