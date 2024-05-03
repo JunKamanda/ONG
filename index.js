@@ -18,7 +18,7 @@ const cards = document.querySelectorAll(".testiContent > .card");
 let currentSlideCard = 0;
 
 function showSlideCard(slideIndex) {
-  cards.forEach((card, index) => {
+  cards.forEach((card) => {
     card.style.transform = `translateX(-${100 * slideIndex}%)`;
   });
 }
@@ -28,6 +28,25 @@ setInterval(() => {
   currentSlideCard = (currentSlideCard + 1) % cards.length;
   showSlideCard(currentSlideCard);
 }, 7000);
+
+
+// Slides pour les plantes
+const picImgs = document.querySelectorAll(".pic_img");
+
+let currentSlideImg = 0;
+
+function showSlideImg(slideIndex) {
+  picImgs.forEach((picImg) => {
+    picImg.style.transform = `translateX(-${100 * slideIndex}%)`;
+  });
+}
+
+// setInterval(() => {
+//   currentSlideImg = (currentSlideImg + 1) % picImgs.length;
+//   showSlideImg(currentSlideImg);
+// }, 4000);
+
+console.log(picImgs);
 
 // NEWSLETTER
 // NEWSLETTER
@@ -46,7 +65,7 @@ btn = document.addEventListener("submit", (e) => {
 // TEXTE RECURSIVE
 // TEXTE RECURSIVE
 const target = document.getElementById("target");
-const tableau = ["changement", "sourire", "future", "espoir"];
+const tableau = ["changement", "sourire", "futur", "espoir"];
 let IndexWords = 0;
 let IndexLetters = 0;
 
@@ -81,3 +100,44 @@ loop();
 
 //AOS
 AOS.init();
+
+// BURGERMENU
+const navside = document.querySelector(".nav > ul")
+console.log(navside);
+
+sideBtn.addEventListener("click", ()=>{
+  navside.classList.toggle("showUl")
+})
+
+// SCROLLNAVIGATION
+const nav = document.querySelector(".navigation")
+console.log(nav);
+let lastScroll = scrollY;
+
+window.addEventListener("scroll", ()=>{
+  if (lastScroll > scrollY) {
+      nav.style.top = "0";
+      sideBtn.style.top = "10px";
+      if (scrollY == 0) {
+          nav.style.opacity = 0.88;
+      }else{
+          nav.style.opacity = 1;
+      }
+  }else{
+      nav.style.top = "-100px";
+      sideBtn.style.top = "-70px";
+  }
+  lastScroll = scrollY;
+})
+
+//LesListesDeLaNavbar
+//LesListesDeLaNavbar
+//LesListesDeLaNavbar
+const listes = document.querySelectorAll(".liste")
+
+listes.forEach((liste)=>{
+  liste.addEventListener("click", ()=>{
+      document.querySelector(".active")?.classList.remove("active");
+      liste.classList.add("active");
+  });
+});
