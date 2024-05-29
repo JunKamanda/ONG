@@ -29,7 +29,6 @@ setInterval(() => {
   showSlideCard(currentSlideCard);
 }, 7000);
 
-
 // Slides pour les plantes
 const picImgs = document.querySelectorAll(".pic_img");
 
@@ -64,80 +63,81 @@ btn = document.addEventListener("submit", (e) => {
 // TEXTE RECURSIVE
 // TEXTE RECURSIVE
 // TEXTE RECURSIVE
-const target = document.getElementById("target");
-const tableau = ["changement", "sourire", "futur", "espoir"];
-let IndexWords = 0;
-let IndexLetters = 0;
+// const target = document.getElementById("target");
+// const tableau = ["changement", "sourire", "futur", "espoir"];
+// let IndexWords = 0;
+// let IndexLetters = 0;
 
-const MakeLetters = () => {
-  let Letters = document.createElement("span");
-  Letters.textContent = tableau[IndexWords][IndexLetters];
-  Letters.classList.add("Letters");
-  target.appendChild(Letters);
-  setTimeout(() => {
-    Letters.remove();
-  }, 3800);
-};
-const loop = () => {
-  setTimeout(() => {
-    if (IndexWords >= tableau.length) {
-      IndexWords = 0;
-    }
-    if (IndexLetters < tableau[IndexWords].length) {
-      MakeLetters();
-      IndexLetters++;
-      loop();
-    } else {
-      IndexWords++;
-      IndexLetters = 0;
-      setTimeout(() => {
-        loop();
-      }, 3800);
-    }
-  }, 100);
-};
-loop();
+// const MakeLetters = () => {
+//   let Letters = document.createElement("span");
+//   Letters.textContent = tableau[IndexWords][IndexLetters];
+//   Letters.classList.add("Letters");
+//   target.appendChild(Letters);
+//   setTimeout(() => {
+//     Letters.remove();
+//   }, 3800);
+// };
+// const loop = () => {
+//   setTimeout(() => {
+//     if (IndexWords >= tableau.length) {
+//       IndexWords = 0;
+//     }
+//     if (IndexLetters < tableau[IndexWords].length) {
+//       MakeLetters();
+//       IndexLetters++;
+//       loop();
+//     } else {
+//       IndexWords++;
+//       IndexLetters = 0;
+//       setTimeout(() => {
+//         loop();
+//       }, 3800);
+//     }
+//   }, 100);
+// };
+// loop();
 
 //AOS
 AOS.init();
 
 // BURGERMENU
-const navside = document.querySelector(".nav > ul")
+const navside = document.querySelector(".nav > ul");
 console.log(navside);
 
-sideBtn.addEventListener("click", ()=>{
-  navside.classList.toggle("showUl")
-})
+sideBtn.addEventListener("click", () => {
+  navside.classList.toggle("showUl");
+});
 
 // SCROLLNAVIGATION
-const nav = document.querySelector(".navigation")
+const nav = document.querySelector(".navigation");
 console.log(nav);
 let lastScroll = scrollY;
 
-window.addEventListener("scroll", ()=>{
+window.addEventListener("scroll", () => {
   if (lastScroll > scrollY) {
-      nav.style.top = "0";
-      sideBtn.style.top = "10px";
-      if (scrollY == 0) {
-          nav.style.opacity = 0.88;
-      }else{
-          nav.style.opacity = 1;
-      }
-  }else{
-      nav.style.top = "-100px";
-      sideBtn.style.top = "-70px";
+    nav.style.top = "0";
+    sideBtn.style.top = "10px";
+    if (scrollY == 0) {
+      nav.style.opacity = 0.88;
+    } else {
+      nav.style.opacity = 1;
+    }
+  } else {
+    nav.style.top = "-100px";
+    sideBtn.style.top = "-70px";
   }
   lastScroll = scrollY;
-})
+});
 
 //LesListesDeLaNavbar
 //LesListesDeLaNavbar
 //LesListesDeLaNavbar
-const listes = document.querySelectorAll(".liste")
+const listes = document.querySelectorAll(".liste");
 
-listes.forEach((liste)=>{
-  liste.addEventListener("click", ()=>{
-      document.querySelector(".active")?.classList.remove("active");
-      liste.classList.add("active");
+listes.forEach((liste) => {
+  liste.addEventListener("click", () => {
+    document.querySelector(".active")?.classList.remove("active");
+    liste.classList.add("active");
   });
 });
+

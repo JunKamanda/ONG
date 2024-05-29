@@ -1,633 +1,693 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./aos/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./medias/Logo1.png" type="image/x-icon" />
 
-    <title>ONG</title>
-  </head> 
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
-  <body>
-    <div class="container">
-      <div class="header" id="header">
-        <div class="slide-container">
-          <div class="slide">
-            <img src="./medias/back.jpg" alt="Image 1" />
-          </div>
-          <div class="slide">
-            <img src="./medias/slide2.jpg" alt="Image 2" />
-          </div>
-          <div class="slide">
-            <img src="./medias/slide3.jpg" alt="Image 3" />
-          </div>
+  <!-- Titles -->
+  <title>Saprohum : La Santé et la Promotion Humaine</title>
+  <meta name="description" content="En Matière de qualité de nutrition et de santé, les statistiques sont alarmantes dans notre pays, la mal
+      nutrition bat son record, des dispensaires et cliniques de fortune poussent ici et là et le soin de qualité
+      est un luxe." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Saprohum" />
+  <meta property="og:description" content="Notre pays n'est pas épargné par le phénomène des enfants de la rue, des orphélins, des filles-mères et par le lot quotidien de la misère et ses corollaires, tout comme la quasi-totalité des pays africains
+      subsahariens" />
+  <meta property="og:image" content="./medias/Logo1.png" />
+
+  <!-- link css/js -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./aos/aos.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header" id="header">
+      <div class="slide-container">
+        <div class="slide">
+          <img src="./medias/back.jpg" alt="Image 1" />
         </div>
-        <div class="navigation">
-          <div class="logo">
-            <h1><a href="#header">SAPROHUM</a></h1>
-          </div>
-          <div class="nav">
-            <ul>
-              <li><a class="active liste" href="#header">Accueil</a></li>
-              <li><a class="liste" href="#about">À propos</a></li>
-              <li><a class="liste" href="#service">Services</a></li>
-              <li><a class="liste" href="#testimonials">Témoignages</a></li>
-              <li>
-                <a class="liste" href="./pages/contact.html" target="_blank">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="news">
-            <form>
-              <input type="email" placeholder="Votre Mail Ici" required class="newsInput" />
-              <button type="submit" id="btn">S'inscrire à la NewsLetter</button>
-            </form>
-          </div>
-
-          <div class="toggle_btn" id="sideBtn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+        <div class="slide">
+          <img src="./medias/slide2.jpg" alt="Image 2" />
+        </div>
+        <div class="slide">
+          <img src="./medias/slide3.jpg" alt="Image 3" />
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="logo">
+          <h1><a href="#header">SAPROHUM</a></h1>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a class="active liste" href="#header">Accueil</a></li>
+            <li><a class="liste" href="#about">À propos</a></li>
+            <li><a class="liste" href="#service">Services</a></li>
+            <li><a class="liste" href="#testimonials">Témoignages</a></li>
+            <li><a class="liste" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="news">
+          <form>
+            <input type="email" placeholder="Votre Mail Ici" required class="newsInput" />
+            <button type="submit" id="btn">S'inscrire à la NewsLetter</button>
+          </form>
         </div>
 
-        <div class="content">
-          <div class="slogan">
-            <h2 id="target" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="400"
-              data-aos-duration="1000" data-aos-once="false">Un petit effort entraîne<br /> un grand </h2>
-          </div>
-          <p class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="400" data-aos-duration="1000"
-            data-aos-once="false">La "Santé et la Promotion Humaine" en sigle SAPROHUM</p>
-          <div class="button">
-            <button class="active" id="btn">Devenez Volontaire</button>
-            <button id="btn">Faites un Don</button>
-          </div>
+        <div class="toggle_btn" id="sideBtn">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
 
-      <div class="donation">
-        <div class="para_donation">
-          <p>En Matière de qualité de nutrition et de santé, les statistiques sont alarmantes dans notre pays, la mal
-            nutrition bat son record, des dispensaires et cliniques de fortune poussent ici et là et le soin de qualité
-            est un luxe.</p>
-          <p>Notre pays n'est pas épargné par le phénomène des enfants de la rue, des orphélins, des filles-mères et par
-            le lot quotidien de la misère et ses corollaires, tout comme la quasi-totalité des pays africains
-            subsahariens</p>
-        </div>
+      <div class="content">
 
-        <div class="cards aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="500" data-aos-duration="1000"
-          data-aos-once="false">
-          <div class="card">
-            <div class="icon">
-              <img src="./medias/faire-un-don.png" alt="" />
-              <p>Don</p>
-              <span>Collectez des fonds dans le monde entier</span>
-            </div>
-            <p class="important">
-              Chaque contribution, grande ou petite, en espèce ou en nature, devient une partie d’un effort mondial pour soutenir les causes qui
-              nous tiennent à cœur.
-            </p>
-            <p>
-              Qu’il s’agisse de lutter contre la faim, de fournir un abri aux sans-abri, de promouvoir l’éducation pour
-              tous ou de protéger notre environnement naturel, chaque acte de bienfaisance traverse les océans et les
-              continents pour faire une différence.
-            </p>
-            <button id="btn">Faire un Don</button>
-          </div>
-          <div class="card">
-            <div class="icon">
-              <img src="./medias/faire-un-don.png" alt="" />
-              <p>Volontaire</p>
-              <span>Collectez des fonds dans le monde entier</span>
-            </div>
-            <p>
-              Ensemble, nous pouvons transformer l’espoir en action. Ensemble, nous pouvons assurer que personne n’est
-              laissé pour compte.
-            </p>
-            <p class="important">
-              Rejoignez-nous dans cette quête pour un avenir meilleur, où chaque geste de générosité construit un pont
-              vers un monde plus juste et plus prospère pour tous.
-            </p>
-            <button id="btn">Devenir volontaire</button>
-          </div>
+        <div class="slogan">
+          <h2 id="target">Un petit effort entraîne<br /> un grand <span>changement</span></h2>
+        </div>
+        <p>La "Santé et la Promotion Humaine" en sigle SAPROHUM</p>
+        <div class="button">
+          <button class="active" id="btn">Devenez Volontaire</button>
+          <button id="btn">Faites un Don</button>
         </div>
       </div>
-
-      <section id="about">
-        <div class="content">
-          <h2>Qui <span>Sommes-Nous</span></h2>
-          <div class="leftAndRight">
-            <div class="left" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"
-              data-aos-duration="1000" data-aos-once="false"> <img src="./medias/about.jpg" alt="SAPROHUM"></div>
-            
-              <div class="right" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="500"
-              data-aos-duration="1000" data-aos-once="false">
-              <h3>Bienvenue chez <span>SAPROHUM</span></h3>
-              <p>
-                La "Santé et la Promotion Humaine", SAPROHUM en sigle, organisation non gouvernementale à caractère
-                humanitaire, aimerait se rallier aux efforts du gouvernement, afin de soulager la population par la production agricole, par
-                les soins de qualité, les déplacés internes et les filles mères avec l'hébergement, la formation éducative
-                et professionnelle.
-              </p>
-              <p>
-                Le siège principal de la SAPROHUM est établi à kinshasa dans la commune de Mont-Ngafula sur l'avenue
-                Babiseke, N°6, Quartier Musanga
-              </p>
-              <div class="socialsDiv">
-                <button id="btn">En savoir plus</button>
-                <div class="socials">
-                  <a href="#"><img src="./medias/facebook.png" alt="facebook" /></a>
-                  <a href="#"><img src="./medias/call-center-service.png" alt="call" /></a>
-                  <a href="#"><img src="./medias/instagram.png" alt="instagram" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="other">
-          <div class="otherContent" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="400"
-            data-aos-duration="1000" data-aos-once="false">
-            <img src="./medias/bg.jpeg" alt="" />
-            <div class="info">
-              <h4>Nos Enfants</h4>
-              <p>Rejoignez-nous dans cette quête pour un avenir meilleur, où chaque geste de générosité construit un pont
-                vers un monde plus juste et plus prospère pour tous.</p>
-              <a href="#">Faites un don</a>
-            </div>
-          </div>
-          <div class="otherContent" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="300"
-            data-aos-duration="1000" data-aos-once="false">
-            <img src="./medias/Schwarz & Funk - Ain't That Bad - bichaublog.jpeg" alt="" />
-            <div class="info">
-              <h4>Nos Enfants</h4>
-              <p>Qu’il s’agisse de lutter contre la faim, de fournir un abri aux sans-abri, de promouvoir l’éducation pour
-                tous ou de protéger notre environnement naturel, chaque acte de bienfaisance traverse les océans et les
-                continents pour faire une différence.</p>
-              <a href="#">Rejoignez-nous</a>
-            </div>
-          </div>
-          <div class="otherContent" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="300"
-            data-aos-duration="1000" data-aos-once="false">
-            <img src="./medias/bg.jpeg" alt="" />
-            <div class="info">
-              <h4>Nos Enfants</h4>
-              <p>Dans un monde où les défis ne connaissent pas de frontières, la générosité de l’esprit humain s’élève
-                pour répondre à l’appel. </p>
-              <a href="#">Faites un don</a>
-            </div>
-          </div>
-          <div class="otherContent" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="400"
-            data-aos-duration="1000" data-aos-once="false">
-            <img src="./medias/Schwarz & Funk - Ain't That Bad - bichaublog.jpeg" alt="" />
-            <div class="info">
-              <h4>Nos Enfants</h4>
-              <p>“Collectez des fonds dans le monde entier” n’est pas seulement un slogan, c’est un mouvement, une mission
-                collective pour apporter un changement positif là où il est le plus nécessaire.</p>
-              <a href="#">Rejoignez-nous</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="f-box">
-          <div class="f-txt">
-            <h2>Notre Approche <span>Collaborative</span></h2>
-            <p>
-              Nous travaillons avec nos partenaires et nos bénéficiaires pour
-              créer un changement positif et durable
-            </p>
-          </div>
-          <div class="parent-box">
-            <div class="box" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="400"
-              data-aos-duration="1000" data-aos-once="false">
-              <div class="box-child">
-                <div class="box-img">
-                  <img src="./medias/cible.png" alt="Impact" />
-                </div>
-                <h3>impact</h3>
-              </div>
-              <div class="box-p">
-                <p>
-                  Saprohum est le moteur du changement social positif, proposant des solutions innovantes aux crises humanitaires et environnementales. Saprohum est bien plus qu'une entité; elle incarne un mouvement vers un monde meilleur.
-                </p>
-              </div>
-            </div>
-            <div class="box" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="500"
-              data-aos-duration="1000" data-aos-once="false">
-              <div class="box-child">
-                <div class="box-img">
-                  <img src="./medias/equipe.png" alt="Collaboration" />
-                </div>
-                <h3>collaboration</h3>
-              </div>
-              <div class="box-p">
-                <p>
-                  La collaboration est fondamentale au travail des ONG et est essentielle pour stimuler l’impact social. En travaillant ensemble avec d'autres ONG, Saprohum espère créer un monde meilleur en combinant leurs efforts pour le bien commun. 🤝🌍
-                </p>
-              </div>
-            </div>
-            <div class="box" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="600"
-              data-aos-duration="1000" data-aos-once="false">
-              <div class="box-child">
-                <div class="box-img">
-                  <img src="./medias/transparence.png" alt="Transparence" />
-                </div>
-                <h3>transparence</h3>
-              </div>
-              <div class="box-p">
-                <p>
-                  La transparence est vitale pour Saprohum. Elle assure la confiance et l’intégrité, permettant aux donateurs et au public de suivre l’utilisation des fonds et l’impact des actions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="objectif-parent">
-          <div class="objectif-title">
-            <h2>Nos <span>objectifs</span></h2>
-            <div class="object-p">
-              <p>
-                En travaillant ensemble pour atteindre ces objectifs, nous croyons
-                que nous pouvons faire une différence significative dans la vie
-                des personnes vivant dans la pauvreté
-              </p>
-            </div>
-          </div>
-
-          <div class="objectif">
-            <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="400"
-              data-aos-duration="1000" data-aos-once="false">
-              <h3>+ 100</h3>
-              <p>Projets à realiser</p>
-            </div>
-
-            <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="500"
-              data-aos-duration="1000" data-aos-once="false">
-              <h3>+ 100k</h3>
-              <p>De personnes à aider</p>
-            </div>
-
-            <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="600"
-              data-aos-duration="1000" data-aos-once="false">
-              <h3>+ 40k</h3>
-              <p>Donateurs ONG</p>
-            </div>
-
-            <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="700"
-              data-aos-duration="1000" data-aos-once="false">
-              <h3>+20k</h3>
-              <p>Pays d'intervention</p>
-            </div>
-          </div>
-
-          <div class="objectif-stat">
-            <div class="ob-parent">
-              <div class="ob-num" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="1000"
-                data-aos-duration="1000" data-aos-once="false">
-                <h3>+2010</h3>
-                <p>Arbres à planter</p>
-              </div>
-              <div class="ob-p">
-                <p>
-                  Contribuer à la construction d'un monde plus juste et plus
-                  équitable pour tous.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="service" class="content">
-        <div class="bg">
-          <h2>Nos <span>Actions</span></h2>
-          <p class="postTitle">Nous croyons fermement en la puissance de la collaboration pour maximiser l'impact de nos
-            efforts dans la lutte contre la faim et la pauvreté. </p>
-          <div class="servicesContainer">
-            <div class="card" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"
-              data-aos-duration="1000" data-aos-once="false">
-              <div class="images">
-                <div class="image">
-                  <img src="./medias/plante2.jpg" alt="Nourriture saine" />
-                </div>
-                <div class="image">
-                  <img src="./medias/food.jpeg" alt="Nourriture saine" />
-                </div>
-                <div class="image">
-                  <img src="./medias/Etang7.jpg" alt="Nourriture saine" />
-                </div>
-              </div>
-              <div class="info">
-                <h3>Une Nourriture Saine</h3>
-                <p>
-                  S'engager à la production agricole et à la pisciculture afin de s'autosuffire alimentairement et consommer bio.
-                </p>
-              </div>
-            </div>
-            <div class="card cardLeft" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="500"
-              data-aos-duration="1000" data-aos-once="false">
-              <div class="info">
-                <h3>Éducations</h3>
-                <p>
-                  Sensibiliser les filles-mères et les orphélins à l'éducation sexuelle, au risque de la dégradation du
-                  tissu vital par le VIH/SIDA, au planning familial. leur offrir un cadre éducatif de qualité avec
-                  scolarité, un hebergement et apprentissage de metier comme la coupe et couture, le tressage des cheveux,
-                  la menuiserie, l'épargne et l'auto financement.
-                </p>
-              </div>
-              <div class="images">
-                <div class="image">
-                  <img src="./medias/medeicine.jpeg" alt="Medecine" />
-                </div>
-                <div class="image">
-                  <img src="./medias/medeicine.jpeg" alt="Medecine" />
-                </div>
-              </div>
-            </div>
-            <div class="card" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"
-              data-aos-duration="1000" data-aos-once="false">
-              <div class="images">
-                <div class="image">
-                  <img src="./medias/medeicine.jpeg" alt="Sheltor" />
-                </div>
-                <div class="image">
-                  <img src="./medias/medeicine.jpeg" alt="Sheltor" />
-                </div>
-
-              </div>
-              <div class="info">
-                <h3>Soins Médicaux</h3>
-                <p>
-                  Leur offrir un soin de qualité à travers une clinique avec imagerie médicale de la SAPROHUM
-                </p>
-              </div>
-            </div>
-            <div class="card cardLeft" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="500"
-              data-aos-duration="1000" data-aos-once="false">
-              <div class="info">
-                <h3>Écosystème</h3>
-                <p>
-                  Promouvoir quelques activités sur le changement climatique en plantant des milliers d'arbres, sur le
-                  droit, le devoir et sur le respect du bien commun.
-                </p>
-              </div>
-              <div class="images">
-                <div class="image">
-                  <img src="./medias/Plantation.jpg" alt="Habits" />
-                </div>
-                <div class="image">
-                  <img src="./medias/Plantation3.jpg" alt="Habits" />
-                </div>
-                <div class="image">
-                  <img src="./medias/Plantation7.jpg" alt="Habits" />
-                </div>
-              </div>
-            </div>
-            <div class="cardAction">
-              <div class="info">
-                <h3>Autres</h3>  
-                <p>Nous oeuvrons pour l'auto suffisance alimentaire </p>
-              </div>
-              <div class="images">
-                <div class="pic">
-                    <div class="img">
-                      <img src="./medias/plante1.jpg" alt="Plantation de Mais" class="pic_img">
-                    </div>
-                    <p>Production agricole / Plantation des Maïs</p>
-                </div>
-                <div class="pic">
-                  <div class="img">
-                    <img src="./medias/Etang1.jpg" alt="Etang" class="pic_img">
-                  </div>
-                  <p>Pisciculture pour l'auto suffisance Alimentaire</p>
-                </div>
-                <div class="pic">
-                  <div class="img">
-                    <img src="./medias/autres1.jpg" alt="Ananas" class="pic_img">
-                  </div>
-                  <p>Plantation des Ananas</p>
-                </div>
-                <div class="pic">
-                  <div class="img">
-                    <img src="./medias/Etang3.jpg" alt="Ananas" class="pic_img">
-                  </div>
-                  <p>Création des étangs</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="testimonials" class="content">
-        <h2>Témoignages</h2>
-        <img src="./medias/citation.png" class="guillemet" alt="Guillemet" />
-        <div class="testiContent">
-          <div class="card">
-            <div class="img">
-              <img src="./medias/president.jpg" alt="temoins" />
-            </div>
-            <p>
-         En tant que président fondateur, j’ai eu l’honneur de rencontrer des individus extraordinaires, tous unis par une vision commune : celle d’un monde meilleur. Notre ONG s’efforce de répondre aux besoins les plus pressants de notre communauté, et c’est avec fierté que je vois l’impact de notre travail se concrétiser. Les sourires retrouvés, les vies améliorées et les espoirs ravivés sont les véritables témoins de notre engagement.
-            </p>
-
-            <h4>KAYEMBE Asagnion Cyrille</h4>
-            <span>Statut : Président</span>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./medias/vicepresident.jpg" alt="temoins" />
-            </div>
-            <p>
-              Notre ONG s’efforce de répondre aux besoins les plus pressants de notre communauté, et c’est avec fierté que je vois l’impact de notre travail se concrétiser. Les sourires retrouvés, les vies améliorées et les espoirs ravivés sont les véritables témoins de notre engagement. Je remercie du fond du cœur tous nos bénévoles, donateurs et partenaires qui rendent cette mission possible. Ensemble, nous continuons d’écrire cette histoire d’humanité et de solidarité.
-            </p>
-
-            <h4>NZAMBA Kayembe Freddy</h4>
-            <span>Statut : Premier Vice-président</span>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./medias/deuxièmeVice.jpg" alt="temoins" />
-            </div>
-            <p>
-              Notre ONG s’efforce de répondre aux besoins les plus pressants de notre communauté, et c’est avec fierté que je vois l’impact de notre travail se concrétiser. Les sourires retrouvés, les vies améliorées et les espoirs ravivés sont les véritables témoins de notre engagement. Je remercie du fond du cœur tous nos bénévoles, donateurs et partenaires qui rendent cette mission possible. Ensemble, nous continuons d’écrire cette histoire d’humanité et de solidarité.
-            </p>
-
-            <h4>NGO Alida Dieudonné</h4>
-            <span>Statut : Deuxième Vice-président</span>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./medias/tresorière.jpg" alt="temoins" />
-            </div>
-            <p>
-              Notre ONG s’efforce de répondre aux besoins les plus pressants de notre communauté, et c’est avec fierté que je vois l’impact de notre travail se concrétiser. Les sourires retrouvés, les vies améliorées et les espoirs ravivés sont les véritables témoins de notre engagement. Je remercie du fond du cœur tous nos bénévoles, donateurs et partenaires qui rendent cette mission possible. Ensemble, nous continuons d’écrire cette histoire d’humanité et de solidarité.
-            </p>
-
-            <h4>MUKIAR Bayita Déborah</h4>
-            <span>Statut : Trésorière Générale</span>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./medias/secretaire.jpg" alt="temoins" />
-            </div>
-            <p>
-              Notre ONG s’efforce de répondre aux besoins les plus pressants de notre communauté, et c’est avec fierté que je vois l’impact de notre travail se concrétiser. Les sourires retrouvés, les vies améliorées et les espoirs ravivés sont les véritables témoins de notre engagement. Je remercie du fond du cœur tous nos bénévoles, donateurs et partenaires qui rendent cette mission possible. Ensemble, nous continuons d’écrire cette histoire d’humanité et de solidarité.
-            </p>
-
-            <h4>MUKIAR Bayita Déborah</h4>
-            <span>Statut : Sécretaire</span>
-          </div>
-      </section>
-
-      <section id="contact" class="content">
-        <h2>News<span>Letter</span></h2>
-        <div class="partenaire">
-          <div class="logo-part">
-            <div class="part-title">
-              <h3>Nous travaillons avec les meilleurs partenaires</h3>
-            </div>
-            <div class="p-on">
-              <p>Grâce à nos partenariats pour l'éradication de la pauvreté, nous aspirons à créer des changements durables qui permettent aux personnes et aux communautés de s'épanouir et de prospérer de manière autonome. Rejoignez-nous dans cette alliance pour un monde où la dignité humaine et l'égalité des chances sont des réalités pour tous.</p>
-            </div>
-              <div class="zol">
-              <img src="./medias/zol.png" alt="" />
-              <img src="./medias/ubisoft.png" alt="" />
-              <img src="./medias/vitality.png" alt="" />
-            </div>
-          </div>
-          <div class="logo-part">
-            <div class="part-title">
-              <h3>Notre Action pour les Plus Défavorisés</h3>
-            </div>
-            <div class="p-on">
-              <p> Ensemble pour un Avenir Meilleur" incarne notre détermination à répondre aux besoins pressants des personnes vivant dans la pauvreté. En tant qu'ONG dédiée à cette cause, chaque action que nous entreprenons vise à améliorer les conditions de vie des plus vulnérables.</p>
-            </div>
-            <div class="zol">
-              <img src="./medias/zol.png" alt="" />
-              <img src="./medias/ubisoft.png" alt="" />
-              <img src="./medias/vitality.png" alt="" />
-            </div>
-          </div>
-          
-          <div class="parent-child">
-            <div class="parent-news">
-              <div class="part-title">
-                <h3>Ensemble pour un Avenir Meilleur</h3>
-              </div>
-              <div class="p-on">
-                 <p>
-                  Inscrivez-vous à notre newsletter pour rester informer sur nos
-                  actions, nos besoins et les moyens de faire une réelle différence.
-                  Rejoignez-nous dans notre mission de solidarité en action, où chaque geste compte dans la lutte contre la pauvreté et l'injustice sociale.
-                </p>
-
-              </div>
-               
-                <form action="#">
-                 <input type="email" placeholder=" Votre email" required>
-                  <input type="submit" value="inscription" />
-                </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <section class="footer-top">
-          <div class="info-parent">
-            <h3>SAPROHUM</h3>
-            <div class="info-footer">
-              <p>Mr. KAYEMBE Cyrille / président</p>
-              <address>
-                <a href="tel:+1(680)356-3488">+1 (680)356-3488</a>
-              </address>
-              <p>Mr. NZAMBA / 1er Vice-président</p>
-              <address>
-                <a href="tel:+1(385)485-9441">+1 (385)485-9441</a>
-              </address>
-              <p>Mr. NGO ALIDA Dieudonné / 2ème Vice-président</p>
-              <address>
-                <a href="tel:+34 616 120 265">+34 616 120 265</a>
-              </address>
-              <p>Armel</p>
-              <address>
-                <a href="tel:+243979353181">+243 979353181</a>
-              </address>
-              <p>Mr Rémy KANUNGA</p>
-              <address>
-                <a href="tel:+243810626960">+243 810626960</a>
-              </address>
-            </div>
-          </div>
-          <div class="info-parent">
-            <p class="title">nos action</p>
-            <div class="info-footer">
-              <p>
-                <a href="">environement</a>
-              </p>
-              <p>
-                <a href="">eau</a>
-              </p>
-              <p>
-                <a href="">alimentaire</a>
-              </p>
-              <p>
-                <a href="">education</a>
-              </p>
-            </div>
-          </div>
-          <div class="info-parent">
-            <p class="title">Apropos</p>
-            <div class="info-footer">
-              <p>
-                <a href="">Déduction fiscale</a>
-              </p>
-              <p>
-                <a href="">L'équipe</a>
-              </p>
-              <p>
-                <a href="">politique de confidentialité</a>
-              </p>
-              <p>
-                <a href="">mentions légales</a>
-              </p>
-            </div>
-          </div>
-          <div class="info-parent">
-            <p class="title">medias</p>
-            <div class="info-footer">
-              <p>
-                <a href="">ils parlent de nous</a>
-              </p>
-              <p>
-                <a href="">kit presse</a>
-              </p>
-              <p>
-                <a href="">contact</a>
-              </p>
-              <div class="reseau">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="line">
-          <p>2024 - Tous droits réservés</p>
-        </div>
-
-      </footer>
     </div>
 
-    <script src="./aos/aos.js"></script> <!-- Anim on scroll -->
-    <script src="index.js"></script>
-  </body>
+    <div class="donation">
+      <div class="para_donation">
+        <p>En Matière de qualité de nutrition et de santé, les statistiques sont alarmantes dans notre pays, la mal
+          nutrition bat son record, des dispensaires et cliniques de fortune poussent ici et là et le soin de qualité
+          est un luxe.</p>
+        <p>Notre pays n'est pas épargné par le phénomène des enfants de la rue, des orphélins, des filles-mères et par
+          le lot quotidien de la misère et ses corollaires, tout comme la quasi-totalité des pays africains
+          subsahariens</p>
+      </div>
+
+      <div class="cards aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="500" data-aos-duration="1000"
+        data-aos-once="false">
+        <div class="card">
+          <div class="icon">
+            <img src="./medias/faire-un-don.png" alt="" />
+            <p>Don</p>
+            <span>Collectez des fonds dans le monde entier</span>
+          </div>
+          <p class="important">
+            Chaque contribution, grande ou petite, en espèce ou en nature, devient une partie d’un effort mondial pour
+            soutenir les causes qui
+            nous tiennent à cœur.
+          </p>
+          <p>
+            Qu’il s’agisse de lutter contre la faim, de fournir un abri aux sans-abri, de promouvoir l’éducation pour
+            tous ou de protéger notre environnement naturel, chaque acte de bienfaisance traverse les océans et les
+            continents pour faire une différence.
+          </p>
+          <button id="btn">Faire un Don</button>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="./medias/faire-un-don.png" alt="" />
+            <p>Volontaire</p>
+            <span>Collectez des fonds dans le monde entier</span>
+          </div>
+          <p>
+            Ensemble, nous pouvons transformer l’espoir en action. Ensemble, nous pouvons assurer que personne n’est
+            laissé pour compte.
+          </p>
+          <p class="important">
+            Rejoignez-nous dans cette quête pour un avenir meilleur, où chaque geste de générosité construit un pont
+            vers un monde plus juste et plus prospère pour tous.
+          </p>
+          <button id="btn">Devenir volontaire</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="content">
+        <h2>Qui <span>Sommes-Nous</span></h2>
+        <div class="leftAndRight">
+          <div class="left" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"
+            data-aos-duration="1000" data-aos-once="false"> <img src="./medias/about.jpg" alt="SAPROHUM"></div>
+
+          <div class="right" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="500"
+            data-aos-duration="1000" data-aos-once="false">
+            <h3>Bienvenue chez <span>SAPROHUM</span></h3>
+            <p>
+              La "Santé et la Promotion Humaine", SAPROHUM en sigle, organisation non gouvernementale à caractère
+              humanitaire, aimerait se rallier aux efforts du gouvernement, afin de soulager la population par la
+              production agricole, par
+              les soins de qualité, les déplacés internes et les filles mères avec l'hébergement, la formation éducative
+              et professionnelle.
+            </p>
+            <p>
+              Le siège principal de la SAPROHUM est établi à kinshasa dans la commune de Mont-Ngafula sur l'avenue
+              Babiseke, N°6, Quartier Musanga
+            </p>
+            <div class="socialsDiv">
+              <button id="btn">En savoir plus</button>
+              <div class="socials">
+                <a href="#"><img src="./medias/facebook.png" alt="facebook" /></a>
+                <a href="#"><img src="./medias/call-center-service.png" alt="call" /></a>
+                <a href="#"><img src="./medias/instagram.png" alt="instagram" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="other">
+        <div class="otherContent" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="400"
+          data-aos-duration="1000" data-aos-once="false">
+          <img src="./medias/bg.jpeg" alt="" />
+          <div class="info">
+            <h4>Nos Enfants</h4>
+            <p>Rejoignez-nous dans cette quête pour un avenir meilleur, où chaque geste de générosité construit un pont
+              vers un monde plus juste et plus prospère pour tous.</p>
+            <a href="#">Faites un don</a>
+          </div>
+        </div>
+        <div class="otherContent" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="300"
+          data-aos-duration="1000" data-aos-once="false">
+          <img src="./medias/Schwarz & Funk - Ain't That Bad - bichaublog.jpeg" alt="" />
+          <div class="info">
+            <h4>Nos Enfants</h4>
+            <p>Qu’il s’agisse de lutter contre la faim, de fournir un abri aux sans-abri, de promouvoir l’éducation pour
+              tous ou de protéger notre environnement naturel, chaque acte de bienfaisance traverse les océans et les
+              continents pour faire une différence.</p>
+            <a href="#">Rejoignez-nous</a>
+          </div>
+        </div>
+        <div class="otherContent" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="300"
+          data-aos-duration="1000" data-aos-once="false">
+          <img src="./medias/bg.jpeg" alt="" />
+          <div class="info">
+            <h4>Nos Enfants</h4>
+            <p>Dans un monde où les défis ne connaissent pas de frontières, la générosité de l’esprit humain s’élève
+              pour répondre à l’appel. </p>
+            <a href="#">Faites un don</a>
+          </div>
+        </div>
+        <div class="otherContent" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="400"
+          data-aos-duration="1000" data-aos-once="false">
+          <img src="./medias/Schwarz & Funk - Ain't That Bad - bichaublog.jpeg" alt="" />
+          <div class="info">
+            <h4>Nos Enfants</h4>
+            <p>“Collectez des fonds dans le monde entier” n’est pas seulement un slogan, c’est un mouvement, une mission
+              collective pour apporter un changement positif là où il est le plus nécessaire.</p>
+            <a href="#">Rejoignez-nous</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="f-box">
+        <div class="f-txt">
+          <h2>Notre Approche <span>Collaborative</span></h2>
+          <p>
+            Nous travaillons avec nos partenaires et nos bénéficiaires pour
+            créer un changement positif et durable
+          </p>
+        </div>
+        <div class="parent-box">
+          <div class="box" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="400"
+            data-aos-duration="1000" data-aos-once="false">
+            <div class="box-child">
+              <div class="box-img">
+                <img src="./medias/cible.png" alt="Impact" />
+              </div>
+              <h3>impact</h3>
+            </div>
+            <div class="box-p">
+              <p>
+                Saprohum est le moteur du changement social positif, proposant des solutions innovantes aux crises
+                humanitaires et environnementales. Saprohum est bien plus qu'une entité; elle incarne un mouvement vers
+                un monde meilleur.
+              </p>
+            </div>
+          </div>
+          <div class="box" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="500"
+            data-aos-duration="1000" data-aos-once="false">
+            <div class="box-child">
+              <div class="box-img">
+                <img src="./medias/equipe.png" alt="Collaboration" />
+              </div>
+              <h3>collaboration</h3>
+            </div>
+            <div class="box-p">
+              <p>
+                La collaboration est fondamentale au travail des ONG et est essentielle pour stimuler l’impact social.
+                En travaillant ensemble avec d'autres ONG, Saprohum espère créer un monde meilleur en combinant leurs
+                efforts pour le bien commun. 🤝🌍
+              </p>
+            </div>
+          </div>
+          <div class="box" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="600"
+            data-aos-duration="1000" data-aos-once="false">
+            <div class="box-child">
+              <div class="box-img">
+                <img src="./medias/transparence.png" alt="Transparence" />
+              </div>
+              <h3>transparence</h3>
+            </div>
+            <div class="box-p">
+              <p>
+                La transparence est vitale pour Saprohum. Elle assure la confiance et l’intégrité, permettant aux
+                donateurs et au public de suivre l’utilisation des fonds et l’impact des actions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="objectif-parent">
+        <div class="objectif-title">
+          <h2>Nos <span>objectifs</span></h2>
+          <div class="object-p">
+            <p>
+              En travaillant ensemble pour atteindre ces objectifs, nous croyons
+              que nous pouvons faire une différence significative dans la vie
+              des personnes vivant dans la pauvreté
+            </p>
+          </div>
+        </div>
+
+        <div class="objectif">
+          <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="400"
+            data-aos-duration="1000" data-aos-once="false">
+            <h3>+ 100</h3>
+            <p>Projets à realiser</p>
+          </div>
+
+          <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="500"
+            data-aos-duration="1000" data-aos-once="false">
+            <h3>+ 100k</h3>
+            <p>De personnes à aider</p>
+          </div>
+
+          <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="600"
+            data-aos-duration="1000" data-aos-once="false">
+            <h3>+ 40k</h3>
+            <p>Donateurs ONG</p>
+          </div>
+
+          <div class="objectif-child" class="aos-item" data-aos="fade-down" data-aos-offset="0" data-aos-delay="700"
+            data-aos-duration="1000" data-aos-once="false">
+            <h3>+20k</h3>
+            <p>Pays d'intervention</p>
+          </div>
+        </div>
+
+        <div class="objectif-stat">
+          <div class="ob-parent">
+            <div class="ob-num" class="aos-item" data-aos="fade-up" data-aos-offset="0" data-aos-delay="1000"
+              data-aos-duration="1000" data-aos-once="false">
+              <h3>+2010</h3>
+              <p>Arbres à planter</p>
+            </div>
+            <div class="ob-p">
+              <p>
+                Contribuer à la construction d'un monde plus juste et plus
+                équitable pour tous.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="content">
+      <div class="bg">
+        <h2>Nos <span>Actions</span></h2>
+        <p class="postTitle">Nous croyons fermement en la puissance de la collaboration pour maximiser l'impact de nos
+          efforts dans la lutte contre la faim et la pauvreté. </p>
+        <div class="servicesContainer">
+          <div class="card" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"
+            data-aos-duration="1000" data-aos-once="false">
+            <div class="images">
+              <div class="image">
+                <img src="./medias/plante2.jpg" alt="Nourriture saine" />
+              </div>
+              <div class="image">
+                <img src="./medias/food.jpeg" alt="Nourriture saine" />
+              </div>
+              <div class="image">
+                <img src="./medias/Etang7.jpg" alt="Nourriture saine" />
+              </div>
+            </div>
+            <div class="info">
+              <h3>Une Nourriture Saine</h3>
+              <p>
+                S'engager à la production agricole et à la pisciculture afin de s'autosuffire alimentairement et
+                consommer bio.
+              </p>
+            </div>
+          </div>
+          <div class="card cardLeft" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="500"
+            data-aos-duration="1000" data-aos-once="false">
+            <div class="info">
+              <h3>Éducations</h3>
+              <p>
+                Sensibiliser les filles-mères et les orphélins à l'éducation sexuelle, au risque de la dégradation du
+                tissu vital par le VIH/SIDA, au planning familial. leur offrir un cadre éducatif de qualité avec
+                scolarité, un hebergement et apprentissage de metier comme la coupe et couture, le tressage des cheveux,
+                la menuiserie, l'épargne et l'auto financement.
+              </p>
+            </div>
+            <div class="images">
+              <div class="image">
+                <img src="./medias/slide2.jpg" alt="Medecine" />
+              </div>
+              <div class="image">
+                <img src="./medias/slide3.jpg" alt="Medecine" />
+              </div>
+            </div>
+          </div>
+          <div class="card" class="aos-item" data-aos="fade-right" data-aos-offset="0" data-aos-delay="500"
+            data-aos-duration="1000" data-aos-once="false">
+            <div class="images">
+              <div class="image">
+                <img src="./medias/medeicine.jpeg" alt="Sheltor" />
+              </div>
+              <div class="image">
+                <img src="./medias/téléchargement (1).jpeg" alt="Sheltor" />
+              </div>
+
+            </div>
+            <div class="info">
+              <h3>Soins Médicaux</h3>
+              <p>
+                Leur offrir un soin de qualité à travers une clinique avec imagerie médicale de la SAPROHUM
+              </p>
+            </div>
+          </div>
+          <div class="card cardLeft" class="aos-item" data-aos="fade-left" data-aos-offset="0" data-aos-delay="500"
+            data-aos-duration="1000" data-aos-once="false">
+            <div class="info">
+              <h3>Écosystème</h3>
+              <p>
+                Promouvoir quelques activités sur le changement climatique en plantant des milliers d'arbres, sur le
+                droit, le devoir et sur le respect du bien commun.
+              </p>
+            </div>
+            <div class="images">
+              <div class="image">
+                <img src="./medias/Plantation.jpg" alt="Habits" />
+              </div>
+              <div class="image">
+                <img src="./medias/Plantation3.jpg" alt="Habits" />
+              </div>
+              <div class="image">
+                <img src="./medias/Plantation7.jpg" alt="Habits" />
+              </div>
+            </div>
+          </div>
+          <div class="cardAction">
+            <div class="info">
+              <h3>Autres</h3>
+              <p>Nous oeuvrons pour l'auto suffisance alimentaire </p>
+            </div>
+            <div class="images">
+              <div class="pic">
+                <div class="img">
+                  <img src="./medias/plante1.jpg" alt="Plantation de Mais" class="pic_img">
+                </div>
+                <p>Production agricole / Plantation des Maïs</p>
+              </div>
+              <div class="pic">
+                <div class="img">
+                  <img src="./medias/Etang1.jpg" alt="Etang" class="pic_img">
+                </div>
+                <p>Pisciculture pour l'auto suffisance Alimentaire</p>
+              </div>
+              <div class="pic">
+                <div class="img">
+                  <img src="./medias/autres1.jpg" alt="Ananas" class="pic_img">
+                </div>
+                <p>Plantation des Ananas</p>
+              </div>
+              <div class="pic">
+                <div class="img">
+                  <img src="./medias/Etang7.jpg" alt="Ananas" class="pic_img">
+                </div>
+                <p>Création des étangs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="content">
+      <h2>Témoignages</h2>
+      <img src="./medias/citation.png" class="guillemet" alt="Guillemet" />
+      <div class="testiContent">
+        <div class="card">
+          <div class="img">
+            <img src="./medias/president.jpg" alt="temoins" />
+          </div>
+          <p>
+            En tant que président fondateur, j’ai eu l’honneur de rencontrer des individus extraordinaires, tous unis
+            par une vision commune : celle d’un monde meilleur. Notre ONG s’efforce de répondre aux besoins les plus
+            pressants de notre communauté, et c’est avec fierté que je vois l’impact de notre travail se concrétiser.
+            Les sourires retrouvés, les vies améliorées et les espoirs ravivés sont les véritables témoins de notre
+            engagement.
+          </p>
+
+          <h4>KAYEMBE Asagnion Cyrille</h4>
+          <span>Statut : Président</span>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="./medias/vicepresident.jpg" alt="temoins" />
+          </div>
+          <p>
+            Notre ONG s’efforce de répondre aux besoins les plus pressants de notre communauté, et c’est avec fierté que
+            je vois l’impact de notre travail se concrétiser. Les sourires retrouvés, les vies améliorées et les espoirs
+            ravivés sont les véritables témoins de notre engagement. Je remercie du fond du cœur tous nos bénévoles,
+            donateurs et partenaires qui rendent cette mission possible. Ensemble, nous continuons d’écrire cette
+            histoire d’humanité et de solidarité.
+          </p>
+
+          <h4>NZAMBA Kayembe Freddy</h4>
+          <span>Statut : Premier Vice-président</span>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="./medias/deuxièmeVice.jpg" alt="temoins" />
+          </div>
+          <p>
+            Notre ONG s’efforce de répondre aux besoins les plus pressants de notre communauté, et c’est avec fierté que
+            je vois l’impact de notre travail se concrétiser. Les sourires retrouvés, les vies améliorées et les espoirs
+            ravivés sont les véritables témoins de notre engagement. Je remercie du fond du cœur tous nos bénévoles,
+            donateurs et partenaires qui rendent cette mission possible. Ensemble, nous continuons d’écrire cette
+            histoire d’humanité et de solidarité.
+          </p>
+
+          <h4>NGO Alida Dieudonné</h4>
+          <span>Statut : Deuxième Vice-président</span>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="./medias/tresorière.jpg" alt="temoins" />
+          </div>
+          <p>
+            Les vies améliorées et les espoirs
+            ravivés sont les véritables témoins de notre engagement. Je remercie du fond du cœur tous nos bénévoles,
+            donateurs et partenaires qui rendent cette mission possible. Ensemble, nous continuons d’écrire cette
+            histoire d’humanité et de solidarité.
+          </p>
+
+          <h4>MUKIAR Bayita Déborah</h4>
+          <span>Statut : Trésorière Générale</span>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img src="./medias/secretaire.jpg" alt="temoins" />
+          </div>
+          <p>
+            Notre ONG s’efforce de répondre aux besoins les plus pressants de notre communauté, et c’est avec fierté que
+            je vois l’impact de notre travail se concrétiser. Les sourires retrouvés, les vies améliorées et les espoirs
+            ravivés sont les véritables témoins de notre engagement. Je remercie du fond du cœur tous nos bénévoles,
+            donateurs et partenaires qui rendent cette mission possible. Ensemble, nous continuons d’écrire cette
+            histoire d’humanité et de solidarité.
+          </p>
+
+          <h4>MUNGILINGI Magnificat Hannah</h4>
+          <span>Statut : Sécretaire</span>
+        </div>
+    </section>
+
+    <section id="contact" class="content">
+      <h2>News<span>Letter</span></h2>
+      <div class="partenaire">
+        <div class="logo-part">
+          <div class="part-title">
+            <h3>Nous travaillons avec les meilleurs partenaires</h3>
+          </div>
+          <div class="p-on">
+            <p>Grâce à nos partenariats pour l'éradication de la pauvreté, nous aspirons à créer des changements
+              durables qui permettent aux personnes et aux communautés de s'épanouir et de prospérer de manière
+              autonome. Rejoignez-nous dans cette alliance pour un monde où la dignité humaine et l'égalité des chances
+              sont des réalités pour tous.</p>
+          </div>
+          <div class="zol">
+            <img src="./medias/zol.pn" alt="" />
+            <img src="./medias/ubisoft.pn" alt="" />
+            <img src="./medias/vitality.pn" alt="" />
+          </div>
+        </div>
+        <div class="logo-part">
+          <div class="part-title">
+            <h3>Notre Action pour les Plus Défavorisés</h3>
+          </div>
+          <div class="p-on">
+            <p> Ensemble pour un Avenir Meilleur" incarne notre détermination à répondre aux besoins pressants des
+              personnes vivant dans la pauvreté. En tant qu'ONG dédiée à cette cause, chaque action que nous
+              entreprenons vise à améliorer les conditions de vie des plus vulnérables.</p>
+          </div>
+          <div class="zol">
+            <img src="./medias/zol.pn" alt="" />
+            <img src="./medias/ubisoft.pn" alt="" />
+            <img src="./medias/vitality.pn" alt="" />
+          </div>
+        </div>
+
+        <div class="parent-child">
+          <div class="parent-news">
+            <div class="part-title">
+              <h3>Ensemble pour un Avenir Meilleur</h3>
+            </div>
+            <div class="p-on">
+              <p>
+                Inscrivez-vous à notre newsletter pour rester informer sur nos
+                actions, nos besoins et les moyens de faire une réelle différence.
+                Rejoignez-nous dans notre mission de solidarité en action, où chaque geste compte dans la lutte contre
+                la pauvreté et l'injustice sociale.
+              </p>
+
+            </div>
+
+            <form action="#">
+              <input type="email" placeholder=" Votre email" required>
+              <input type="submit" value="inscription"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <section class="footer-top">
+        <div class="info-parent">
+          <h3>SAPROHUM</h3>
+          <div class="info-footer">
+            <p>Mr. KAYEMBE Cyrille / président</p>
+            <address>
+              <a href="tel:+1(680)356-3488">+1 (680)356-3488</a>
+            </address>
+            <p>Mr. NZAMBA / 1er Vice-président</p>
+            <address>
+              <a href="tel:+1(385)485-9441">+1 (385)485-9441</a>
+            </address>
+            <p>Mr. NGO ALIDA Dieudonné / 2ème Vice-président</p>
+            <address>
+              <a href="tel:+34 616 120 265">+34 616 120 265</a>
+            </address>
+            <p>Armel</p>
+            <address>
+              <a href="tel:+243979353181">+243 979353181</a>
+            </address>
+            <p>Mr Rémy KANUNGA</p>
+            <address>
+              <a href="tel:+243810626960">+243 810626960</a>
+            </address>
+          </div>
+        </div>
+        <div class="info-parent">
+          <p class="title">nos action</p>
+          <div class="info-footer">
+            <p>
+              <a href="">environement</a>
+            </p>
+            <p>
+              <a href="">eau</a>
+            </p>
+            <p>
+              <a href="">alimentaire</a>
+            </p>
+            <p>
+              <a href="">education</a>
+            </p>
+          </div>
+        </div>
+        <div class="info-parent">
+          <p class="title">Apropos</p>
+          <div class="info-footer">
+            <p>
+              <a href="">Déduction fiscale</a>
+            </p>
+            <p>
+              <a href="">L'équipe</a>
+            </p>
+            <p>
+              <a href="">politique de confidentialité</a>
+            </p>
+            <p>
+              <a href="">mentions légales</a>
+            </p>
+          </div>
+        </div>
+        <div class="info-parent">
+          <p class="title">medias</p>
+          <div class="info-footer">
+            <p>
+              <a href="">ils parlent de nous</a>
+            </p>
+            <p>
+              <a href="">kit presse</a>
+            </p>
+            <p>
+              <a href="">contact</a>
+            </p>
+            <div class="reseau">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-tiktok"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="line">
+        <p>2024 - Tous droits réservés</p>
+      </div>
+
+    </footer>
+
+    <div id="google_translate_element"></div>
+  </div>
+
+
+  <script src="./aos/aos.js"></script> <!-- Anim on scroll -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "fr",
+        },
+        "google_translate_element"
+      );
+    };
+  </script>
+  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

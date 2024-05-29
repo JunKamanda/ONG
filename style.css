@@ -106,7 +106,24 @@ section {
     font-size: 1.4rem;
   }
 }
-
+.VIpgJd-ZVi9od-ORHb-OEVmcd{
+  top: 100px !important;
+}
+#google_translate_element{
+  width: 200px;
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  z-index: 999999999999999;
+  overflow: hidden;
+}
+#google_translate_element .goog-te-combo{
+  border: 1px solid var(---color1);
+  background: var(---color1);
+  color: var(---color4);
+  height: 30px;
+  width: 100%;
+}
 
 /* CONTAINER */
 /* CONTAINER */
@@ -116,10 +133,9 @@ section {
   text-align: center;
 }
 .container .header {
-  height: 100vh;
-  min-width: 100vw;
+  min-height: 100vh;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 10px;
   position: relative;
   z-index: 1000;
 }
@@ -153,11 +169,9 @@ section {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  border: 1px solid white;
   padding: 15px;
   background: var(---color3);
   position: fixed;
-  top: 0;
   left: 0;
   transition: .4s ease-in-out;
   z-index: 99999999;
@@ -343,7 +357,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(---color4);
-  width: 100vw;
+  width: 90%;
   height: 300px;
 }
 .header .content .slogan{
@@ -381,6 +395,10 @@ section {
   color: var(---color1);
   border: 1px solid var(---color1);
 }
+
+/* RESPONSIVE DU HEADER */
+/* RESPONSIVE DU HEADER */
+/* RESPONSIVE DU HEADER */
 @media screen and (max-width: 879px) {
   .header .content .slogan h2{
     width: 100%;
@@ -437,7 +455,9 @@ section {
   background: var(---color4);
   z-index: 2;
   position: relative;
-  top: 0;
+  /* top: 0;
+  left: 0; */
+  margin: 0 auto;
 }
 .donation .para_donation p {
   font-family: "Montserat";
@@ -505,12 +525,8 @@ section {
   box-shadow: 1px 1px 4px 0px var(---color1);
   transform: scale(0.97);
 }
-/* ABOUT */
-@media screen and (max-width: 720px) {
-  .donation .para_donation p{
-    font-size: .9rem;
-  }
-}
+
+/* RESPONSIVE DU DONATION */
 @media screen and (max-width: 595px) {
   .donation .cards{
     flex-direction: column;
@@ -519,6 +535,7 @@ section {
     width: 100%;
   }
 }
+
 /* ABOUT */
 /* ABOUT */
 #about {
@@ -769,6 +786,10 @@ section {
   font-size: 1.04rem;
   font-family: "foundation";
 }
+
+/* RESPONSIVE APPROCHE COLLABORATIVE */
+/* RESPONSIVE APPROCHE COLLABORATIVE */
+/* RESPONSIVE APPROCHE COLLABORATIVE */
 @media screen and (max-width: 900px) {
   .parent-box {
     grid-template-columns: repeat(2, 1fr);
@@ -864,6 +885,9 @@ section {
   width: 100%;
   margin: 0 auto;
 }
+/* RESPONSIVE OBJECTIF */
+/* RESPONSIVE OBJECTIF */
+/* RESPONSIVE OBJECTIF */
 @media screen and (max-width: 600px) {
   .objectif{
     flex-wrap: nowrap;
@@ -1052,13 +1076,14 @@ section {
 .cardAction .images .pic p{
   font-size: 1.1rem;
 }
+
+/* RESPONSIVE SERVICES */
+/* RESPONSIVE SERVICES */
+/* RESPONSIVE SERVICES */
 @media screen and (max-width: 720px) {
   .servicesContainer .card .info p{
     font-size: 1.1rem;
   }
-  /* .servicesContainer .card .image{
-    height: 250px;
-  } */
   .servicesContainer .card .info{
     justify-content: center;
   }
@@ -1097,6 +1122,7 @@ section {
     margin: 20px 0;
   }
 }
+
 /* TEMOIGNAGES */
 /* TEMOIGNAGES */
 /* TEMOIGNAGES */
@@ -1164,6 +1190,10 @@ section {
   margin: 10px 0 0;
   color: var(---color1);
 }
+
+/* RESPONSIVE TEMOIGNAGE */
+/* RESPONSIVE TEMOIGNAGE */
+/* RESPONSIVE TEMOIGNAGE */
 @media screen and (max-width: 595px) {
   #testimonials{
     display: none;
@@ -1174,6 +1204,7 @@ section {
     display: none;
   }
 }
+
 /* NEWSLETTER */
 /* NEWSLETTER */
 /* NEWSLETTER */
@@ -1267,6 +1298,10 @@ section {
   width: 80%;
   margin: 10px 0;
 }
+
+/* RESPONSIVE NEWSLETTER */
+/* RESPONSIVE NEWSLETTER */
+/* RESPONSIVE NEWSLETTER */
 @media screen and (max-width: 888px) {
   .partenaire {
     grid-template-columns: repeat(2, 1fr);
@@ -1292,7 +1327,9 @@ section {
   }
 }
 
-/* PAGES CONTACT */ /* PAGES CONTACT */ /* PAGES CONTACT */
+/* PAGES CONTACT */
+/* PAGES CONTACT */
+/* PAGES CONTACT */
 
 #contact {
   position: relative;
@@ -1312,9 +1349,9 @@ section {
   letter-spacing: 1px;
 }
 
-/*footer*/
-/*footer*/
-/*footer*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
 
 footer {
   width: 100%;
@@ -1411,6 +1448,9 @@ address a {
   font-family: "foundation";
 }
 
+/* RESPONSIVE FOOTER */
+/* RESPONSIVE FOOTER */
+/* RESPONSIVE FOOTER */
 @media screen and (max-width: 888px) {
   .footer-top {
     grid-template-columns: repeat(3, 1fr);
@@ -1449,5 +1489,3 @@ address a {
     font-size: 1rem;
   }
 }
-
-
